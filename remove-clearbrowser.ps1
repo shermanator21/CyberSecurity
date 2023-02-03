@@ -1,25 +1,24 @@
 
 function remove-clearbrowser($computername){
     Invoke-command -ComputerName $computername -scriptblock{
-        # Stop ClearBrowser Process (Process is likely called SearchApp (mimicks a legitimate process) and may have persistence. See function below remove-ClearbrowserProcess to terminate it many times at once)
+        # Stop ClearBrowser Process (process name unknown, but this is the placeholder if it is discovered)
 
-        #Life 1
-        if (Get-Process -Name SearchApp -ErrorAction SilentlyContinue){
+        if (Get-Process -Name "<ProcessName>" -ErrorAction SilentlyContinue){
             echo ''
 
             echo '-------------------------------';
 
-            echo 'SearchApp Processes found...terminating';
+            echo '<ProcessName> Processes found...terminating';
 
             echo '-------------------------------';
-            Stop-Process -Name SearchApp -Force -ErrorAction SilentlyContinue
+            Stop-Process -Name "<ProcessName>" -Force -ErrorAction SilentlyContinue
             
         }else{
             echo ''
 
             echo '-------------------------------';
 
-            echo 'No SearchApp Processs found';
+            echo 'No <ProcessName> Processs found';
 
             echo '-------------------------------';
         }
