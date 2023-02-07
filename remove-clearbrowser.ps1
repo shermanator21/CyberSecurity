@@ -1,7 +1,6 @@
-
 function remove-clearbrowser($computername){
     Invoke-command -ComputerName $computername -scriptblock{
-        # Stop ClearBrowser Process (process name unknown, but this is the placeholder if it is discovered)
+        # Stop ClearBrowser Process (process name unknown, but this is the placeholder if one is discovered)
 
         if (Get-Process -Name "<ProcessName>" -ErrorAction SilentlyContinue){
             echo ''
@@ -109,11 +108,15 @@ function remove-clearbrowser($computername){
 
         'Registry::HKU\*\Software\Clear',
 
+        'Registry::HKU\*\Software\Clear.App',
+
         'Registry::HKU\*\Software\Clear.App*',
         
-        'Registry::HKU\*\Software\ClearBar*',
+        'Registry::HKU\*\Software\ClearBar',
 
         'Registry::HKU\*\Software\ClearBar.App',
+
+        'Registry::HKU\*\Software\ClearBar*',
 
         'Registry::HKU\*\Software\ClearBrowser*',
 
