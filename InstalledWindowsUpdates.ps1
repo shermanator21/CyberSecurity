@@ -11,4 +11,6 @@ Having a list of installed updates can be useful for a cybersecurity analyst in 
 -Investigating the root cause of a security issue by determining which updates were installed before or af
 ter the issue occurred
 -Keeping track of when updates were installed to ensure compliance with security policies or regulations
+
+Remember that monthy security KB rollups drop on the second Tuesday of the month. Verify you have the latest kb installed for this workstation/server
 #>
