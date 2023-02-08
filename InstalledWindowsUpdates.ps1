@@ -1,5 +1,5 @@
 # Get a list of all the installed Windows updates
-Get-WmiObject -Class Win32_QuickFixEngineering | Select-Object HotFixID, Description, InstalledOn
+Get-WmiObject -Class Win32_QuickFixEngineering | Select-Object HotFixID, Description, InstalledOn | Sort InstalledOn
 
 <#
 This script uses the Get-WmiObject cmdlet to retrieve a list of all the installed Windows updates on the local computer. 
