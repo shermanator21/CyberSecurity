@@ -1,5 +1,5 @@
 # Define your API key
-$apiKey = "4c0b559d3b4b87f66b80f8b8b1ee582532880a988ad0833cb2c6b6c552d75704deea210fd4322350"
+$apiKey = "AbuseAPIKey"
 
 <#
 Note: you will need an API key to complete this. They are free after you sign up for an account on abuseipdb.com. 
