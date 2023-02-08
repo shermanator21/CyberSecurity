@@ -1,5 +1,6 @@
 # Define your API key
-$apiKey = "<API_Key_Here>"
+$apiKey = "4c0b559d3b4b87f66b80f8b8b1ee582532880a988ad0833cb2c6b6c552d75704deea210fd4322350"
+
 <#
 Note: you will need an API key to complete this. They are free after you sign up for an account on abuseipdb.com. 
 If you would like mine and know my personally, just ask.
@@ -13,6 +14,14 @@ Note: you will need to have a list of IPs (one per row) in a text document. Make
 
 # Define the file path for the .csv file. This just exports to current directory
 $csvFilePath = "abuseipdb_results.csv"
+
+# Check if the results file already exists
+$fileCounter = 0
+while (Test-Path $csvFilePath) {
+  # Modify the file name to avoid overwriting the existing file
+  $fileCounter++
+  $csvFilePath = "abuseipdb_results_$fileCounter.csv"
+}
 
 # Read the IP address list from the file
 $ipList = Get-Content -Path $filePath
