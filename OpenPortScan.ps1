@@ -34,7 +34,7 @@ else
 
 <#
 This script allows you to check for open ports on a remote computer. 
-You enter the name or IP address of the remote computer, as well as a commma-separated list of ports to check (ex: 135,445).
+You enter the name or IP address of the remote computer, as well as a commma-separated list of ports to check (ex: 135,445). To see all ports on local host, "netstat -ano". LISTENING are open.
 The script then uses the System.Net.Sockets.TcpClient class to check if a connection can be made to each specified port on the remote computer. 
 If a connection can be made, the port is considered open and is added to the list of open ports. 
 Finally, the script outputs the list of open ports, if any.
