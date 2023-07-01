@@ -3,7 +3,7 @@ $apiKey = "AbuseAPIKey"
 
 <#
 Note: you will need an API key to complete this. They are free after you sign up for an account on abuseipdb.com. 
-If you would like mine and know my personally, just ask.
+If you would like mine and know me personally, just ask.
 #>
 
 # Define the file path for the IP address list
