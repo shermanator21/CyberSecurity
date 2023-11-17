@@ -2,7 +2,7 @@
 # This short script was created to query groups with large membership due to the limit restraints of Get-ADGroupMembers (5,000)
 
 # Specify Group Here
-$group = "InetFilter - Deploy Est" 
+$group = "group_name" 
 
 # Gets DN of group
 $GroupDN = (Get-ADGroup -Identity $group).DistinguishedName
