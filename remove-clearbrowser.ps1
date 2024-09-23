@@ -27,7 +27,9 @@ function remove-clearbrowser($computername){
 
         $badDirs = 'c:\users\*\appdata\local\programs\clear*',
 
-        'C:\users\*\downloads\Clear-EasyPrint.b7002.SK008.ch.exe',
+        # Old Example: 'C:\users\*\downloads\Clear-EasyPrint.b7002.SK008.ch.exe',
+
+        'C:\users\*\downloads\Clear-Easy*',
 
         'C:\Users\*\AppData\Local\Clear',
 
